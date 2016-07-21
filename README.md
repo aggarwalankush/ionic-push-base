@@ -19,6 +19,7 @@ This can be used as base template for Ionic 2 Push apps. It's working for both i
 
 * Replace YOUR_PROJECT_NUMBER_HERE in package.json and app.ts with above PROJECT_NUMBER
 * Install node_modules and push plugin
+
     ```bash
     $ npm install
     $ ionic plugin add https://github.com/phonegap/phonegap-plugin-push --variable SENDER_ID=”YOUR_PROJECT_NUMBER_HERE”
@@ -43,19 +44,25 @@ This can be used as base template for Ionic 2 Push apps. It's working for both i
 ## Push Notifications Preview in lock screen and while using App
 
 * Android
-  <img src="screenshots/android_push.png" alt="Android Lock Screen">
-  <img src="screenshots/android_alert.png" alt="Android While Using App">
+    
+    <tr>
+    <td> <img src="screenshots/android_push.png" alt="Notification on Lock Screen" style="width: 250px;"/> </td>
+    <td> <img src="screenshots/android_alert.png" alt="Notification While Using App" style="width: 250px;"/> </td>
+    </tr>
+    
 
 * iOS
-  <img src="screenshots/ios_push.png" alt="iOS Lock Screen">
-  <img src="screenshots/ios_alert.png" alt="iOS While Using App">
+
+  <tr>
+    <td> <img src="screenshots/ios_push.png" alt="Notification on Lock Screen" style="width: 250px;"/> </td>
+    <td> <img src="screenshots/ios_alert.png" alt="Notification While Using App" style="width: 250px;"/> </td>
+  </tr>
+    
  
 Server Code
 =================
 [Push Notifications Server code](https://github.com/aggarwalankush/push-notification-server) :tada::+1:
 It has server code used to send Push Notification to iOS and Android device.
-
-
 
 
 ## File Structure of App

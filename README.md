@@ -44,19 +44,14 @@ This can be used as base template for Ionic 2 Push apps. It's working for both i
 ## Push Notifications Preview in lock screen and while using App
 
 * Android
-    
-    <tr>
-    <td> <img src="screenshots/android_push.png" alt="Notification on Lock Screen" style="width: 250px;"/> </td>
-    <td> <img src="screenshots/android_alert.png" alt="Notification While Using App" style="width: 250px;"/> </td>
-    </tr>
-    
+  
+  <img src="screenshots/android_push.png" alt="Notification on Lock Screen" width="250"/>
+  <img src="screenshots/android_alert.png" alt="Notification While Using App" width="250"/>
 
 * iOS
 
-  <tr>
-    <td> <img src="screenshots/ios_push.png" alt="Notification on Lock Screen" style="width: 250px;"/> </td>
-    <td> <img src="screenshots/ios_alert.png" alt="Notification While Using App" style="width: 250px;"/> </td>
-  </tr>
+  <img src="screenshots/ios_push.png" alt="Notification on Lock Screen" width="250"/>
+  <img src="screenshots/ios_alert.png" alt="Notification While Using App" width="250"/>
     
  
 Server Code

@@ -11,18 +11,18 @@ This can be used as base template for Ionic 2 Push apps. It's working for both i
 * Install Ionic and cordova
 
     ```bash
-    $ npm install -g ionic@beta
+    $ npm install -g ionic
     $ sudo npm install -g cordova
     ```
 
-* For Android, generate PROJECT_NUMBER using this [tutorial](https://medium.com/@ankushaggarwal/gcm-setup-for-android-push-notifications-656cfdd8adbd) :+1:
+* For Android, generate SENDER_ID using this [tutorial](https://medium.com/@ankushaggarwal/gcm-setup-for-android-push-notifications-656cfdd8adbd) :+1:
 
-* Replace YOUR_PROJECT_NUMBER_HERE in package.json and app.ts with above PROJECT_NUMBER
+* Replace YOUR_SENDER_ID in package.json and app.ts with above SENDER_ID
 * Install node_modules and push plugin
 
     ```bash
     $ npm install
-    $ ionic plugin add https://github.com/phonegap/phonegap-plugin-push --variable SENDER_ID=”YOUR_PROJECT_NUMBER_HERE”
+    $ ionic plugin add https://github.com/phonegap/phonegap-plugin-push --variable SENDER_ID=”YOUR_SENDER_ID”
     ```
 
 ### Android

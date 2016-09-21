@@ -23,7 +23,7 @@ export class Ionic2Push {
             StatusBar.styleDefault();
             let push = Push.init({
                 android: {
-                    senderID: "YOUR_PROJECT_NUMBER_HERE"
+                    senderID: "YOUR_SENDER_ID"
                 },
                 ios: {
                     alert: "true",

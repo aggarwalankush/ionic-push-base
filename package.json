@@ -36,7 +36,7 @@
     "ionic-plugin-keyboard",
     {
       "variables": {
-        "SENDER_ID": "YOUR_PROJECT_NUMBER_HERE"
+        "SENDER_ID": "YOUR_SENDER_ID"
       },
       "locator": "phonegap-plugin-push",
       "id": "phonegap-plugin-push"

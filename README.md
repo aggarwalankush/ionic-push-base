@@ -3,6 +3,10 @@ Ionic 2 Push Base
 
 This can be used as base template for Ionic 2 Push apps. It's working for both iOS and Android Push Notifications.
   
+## Tutorial
+* [Push Notifications in Ionic 2](https://medium.com/@ankushaggarwal/push-notifications-in-ionic-2-658461108c59)
+* [FCM Setup for Android Notifications](https://medium.com/@ankushaggarwal/gcm-setup-for-android-push-notifications-656cfdd8adbd)
+* [APNS Setup for IOS Notifications](https://medium.com/@ankushaggarwal/generate-apns-certificate-for-ios-push-notifications-85e4a917d522)
 
 ## Getting Started
 

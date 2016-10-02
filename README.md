@@ -68,20 +68,38 @@ It has server code used to send Push Notification to iOS and Android device.
 
 ```
 ionic2-push-base/
-├── app/                               * Working directory
-    ├── pages/                         * Contains all of our pages
-    │   ├── details/                   * Push Details tab page
-    │   │    ├── detail.html           * DetailsPage template
-    │   │    └── detail.ts             * DetailsPage code
-    │   │
-    │   ├── home/                      * Home page
-    │   │    ├── home.html             * HomePage template
-    │   │    └── home.ts               * HomePage code
-    │   │
-    │   │── tabs/                      * Tabs page
-    │        ├── tabs.html             * TabsPage template
-    │        └── tabs.ts               * TabsPage code
-    │    
-    ├── app.html                       * Application template
-    └── app.ts                         * Main Application configuration with Push Notification
+|-- src/
+|    |-- app/
+|    |    ├── app.ts
+|    |    └── app.module.ts
+|    |    └── main.dev.ts
+|    |    └── main.prod.ts 
+|    |
+|    |-- pages/                          * Contains all of our pages
+│    │    ├── details/                   * Push Details tab page
+│    │    │    ├── detail.html           * DetailsPage template
+│    │    │    └── detail.ts             * DetailsPage code
+│    │    │
+│    │    ├── home/                      * Home page
+│    │    │    ├── home.html             * HomePage template
+│    │    │    └── home.ts               * HomePage code
+│    │    │
+│    │    ├── tabs/                      * Tabs page
+│    │    │    ├── tabs.html             * TabsPage template
+│    │    │    └── tabs.ts               * TabsPage code
+│    │    │
+│    ├── theme/                          * App theme files
+|    |     ├── variables.scss            * App Shared Sass Variables
+|    |
+|    |-- index.html
+|
+├── .editorconfig                        * Defines coding styles between editors
+├── .gitignore                           * Example git ignore file
+├── LICENSE                              * MIT License
+├── README.md                            * This file
+├── config.xml                           * Cordova configuration file
+├── ionic.config.json                    * Ionic configuration file
+├── package.json                         * Defines our JavaScript dependencies
+├── tsconfig.json                        * Defines the root files and the compiler options
+├── tslint.json                          * Defines the rules for the TypeScript linter   
 ```

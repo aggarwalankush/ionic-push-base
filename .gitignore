@@ -2,7 +2,6 @@
 # http://git-scm.com/docs/gitignore
 
 node_modules/
-www/build/
 platforms/
 plugins/
 *.swp
@@ -10,3 +9,34 @@ plugins/
 Thumbs.db
 
 .idea/
+
+*.iml
+resources/
+
+
+
+*~
+*.sw[mnpcod]
+*.log
+*.log.*
+*.tmp
+*.tmp.*
+log.txt
+*.sublime-project
+*.sublime-workspace
+.vscode/
+npm-debug.log*
+
+.sass-cache/
+.tmp/
+.versions/
+coverage/
+dist/
+tmp/
+temp/
+hooks/
+plugins/ios.json
+www/
+$RECYCLE.BIN/
+
+UserInterfaceState.xcuserstate

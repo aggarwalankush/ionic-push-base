@@ -1,24 +1,9 @@
-# Specifies files to intentionally ignore when using Git
+# Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
-
-node_modules/
-platforms/
-plugins/
-*.swp
-.DS_Store
-Thumbs.db
-
-.idea/
-
-*.iml
-resources/
-
-
 
 *~
 *.sw[mnpcod]
 *.log
-*.log.*
 *.tmp
 *.tmp.*
 log.txt
@@ -26,17 +11,24 @@ log.txt
 *.sublime-workspace
 .vscode/
 npm-debug.log*
+*.iml
 
+.idea/
 .sass-cache/
 .tmp/
 .versions/
 coverage/
 dist/
+node_modules/
 tmp/
 temp/
 hooks/
+platforms/
+plugins/
 plugins/ios.json
-www/
+resources/
 $RECYCLE.BIN/
 
+.DS_Store
+Thumbs.db
 UserInterfaceState.xcuserstate

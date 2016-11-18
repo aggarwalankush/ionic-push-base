@@ -10,36 +10,33 @@ This can be used as base template for Ionic 2 Push apps. It's working for both i
 
 ## Getting Started
 
-* Clone this repository.
+* Clone this repository
 
-* Install Ionic and cordova
+* Install Ionic, cordova and node_modules
 
     ```bash
     $ npm install -g ionic
-    $ sudo npm install -g cordova
-    ```
-
-* For Android, generate SENDER_ID using this [tutorial](https://medium.com/@ankushaggarwal/gcm-setup-for-android-push-notifications-656cfdd8adbd) :+1:
-
-* Replace YOUR_SENDER_ID in package.json and app.ts with above SENDER_ID
-* Install node_modules and push plugin
-
-    ```bash
+    $ sudo npm install -g cordova@6.3.1
     $ npm install
-    $ ionic plugin add https://github.com/phonegap/phonegap-plugin-push --variable SENDER_ID=”YOUR_SENDER_ID”
     ```
+
+* Generate **SENDER_ID** using this [tutorial](https://medium.com/@ankushaggarwal/gcm-setup-for-android-push-notifications-656cfdd8adbd) :+1:
+  
+* _Replace **YOUR_SENDER_ID** in **config.xml and app.ts** with above **SENDER_ID**_
 
 ### Android
 
+```bash
     $ ionic platform add android
     $ ionic build android
     $ ionic run android
-
+```
 
 ### iOS
+```bash
     $ ionic platform add ios
     $ ionic build ios
-    
+```    
     Run using XCode
 
 
@@ -92,6 +89,8 @@ ionic2-push-base/
 |    |     ├── variables.scss            * App Shared Sass Variables
 |    |
 |    |-- index.html
+|    |-- manifest.json
+|    |-- service-worker.js
 |
 ├── .editorconfig                        * Defines coding styles between editors
 ├── .gitignore                           * Example git ignore file

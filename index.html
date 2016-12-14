@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ionic2-push-base by aggarwalankush</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Ionic2-push-base</h1>
+      <h2 class="project-tagline">Ionic 2 Push Notifications Base App for iOS and Android</h2>
+      <a href="https://github.com/aggarwalankush/ionic2-push-base" class="btn">View on GitHub</a>
+      <a href="https://github.com/aggarwalankush/ionic2-push-base/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/aggarwalankush/ionic2-push-base/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="ionic-2-push-base" class="anchor" href="#ionic-2-push-base" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ionic 2 Push Base</h1>
+
+<p>This can be used as base template for Ionic 2 Push apps. It's working for both iOS and Android Push Notifications.</p>
+
+<h2>
+<a id="tutorial" class="anchor" href="#tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutorial</h2>
+
+<ul>
+<li><a href="https://medium.com/@ankushaggarwal/push-notifications-in-ionic-2-658461108c59">Push Notifications in Ionic 2</a></li>
+<li><a href="https://medium.com/@ankushaggarwal/gcm-setup-for-android-push-notifications-656cfdd8adbd">FCM Setup for Android Notifications</a></li>
+<li><a href="https://medium.com/@ankushaggarwal/generate-apns-certificate-for-ios-push-notifications-85e4a917d522">APNS Setup for IOS Notifications</a></li>
+</ul>
+
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<ul>
+<li><p>Clone this repository</p></li>
+<li>
+<p>Install Ionic, cordova and node_modules</p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install -g ionic
+$ sudo npm install -g cordova@6.3.1
+$ npm install</pre></div>
+</li>
+<li><p>Generate <strong>SENDER_ID</strong> using this <a href="https://medium.com/@ankushaggarwal/gcm-setup-for-android-push-notifications-656cfdd8adbd">tutorial</a> <g-emoji alias="+1" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" ios-version="6.0">👍</g-emoji></p></li>
+<li><p><em>Replace <strong>YOUR_SENDER_ID</strong> in <strong>config.xml and app.ts</strong> with above <strong>SENDER_ID</strong></em></p></li>
+</ul>
+
+<h3>
+<a id="android" class="anchor" href="#android" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android</h3>
+
+<div class="highlight highlight-source-shell"><pre>    $ ionic platform add android
+    $ ionic build android
+    $ ionic run android</pre></div>
+
+<h3>
+<a id="ios" class="anchor" href="#ios" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iOS</h3>
+
+<div class="highlight highlight-source-shell"><pre>    $ ionic platform add ios
+    $ ionic build ios</pre></div>
+
+<pre><code>Run using XCode
+</code></pre>
+
+<h4>
+<a id="use-device-token-printed-in-console-for-push-notifications-using-below-server-code" class="anchor" href="#use-device-token-printed-in-console-for-push-notifications-using-below-server-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Use device token printed in console for push notifications using below server code</h4>
+
+<h2>
+<a id="push-notifications-preview-in-lock-screen-and-while-using-app" class="anchor" href="#push-notifications-preview-in-lock-screen-and-while-using-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Push Notifications Preview in lock screen and while using App</h2>
+
+<ul>
+<li>
+<p>Android</p>
+
+<p><img src="https://raw.githubusercontent.com/aggarwalankush/ionic2-push-base/master/screenshots/android_push.png" alt="Notification on Lock Screen" width="250">
+<img src="https://raw.githubusercontent.com/aggarwalankush/ionic2-push-base/master/screenshots/android_alert.png" alt="Notification While Using App" width="250"></p>
+</li>
+<li>
+<p>iOS</p>
+
+<p><img src="https://raw.githubusercontent.com/aggarwalankush/ionic2-push-base/master/screenshots/ios_push.png" alt="Notification on Lock Screen" width="250">
+<img src="https://raw.githubusercontent.com/aggarwalankush/ionic2-push-base/master/screenshots/ios_alert.png" alt="Notification While Using App" width="250"></p>
+</li>
+</ul>
+
+<h1>
+<a id="server-code" class="anchor" href="#server-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Server Code</h1>
+
+<p><a href="https://github.com/aggarwalankush/push-notification-server">Push Notifications Server code</a> <g-emoji alias="tada" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f389.png" ios-version="6.0">🎉</g-emoji><g-emoji alias="+1" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" ios-version="6.0">👍</g-emoji>
+It has server code used to send Push Notification to iOS and Android device.</p>
+
+<h2>
+<a id="file-structure-of-app" class="anchor" href="#file-structure-of-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>File Structure of App</h2>
+
+<pre><code>ionic2-push-base/
+|-- src/
+|    |-- app/
+|    |    ├── app.ts
+|    |    └── app.module.ts
+|    |    └── main.dev.ts
+|    |    └── main.prod.ts 
+|    |
+|    |-- pages/                          * Contains all of our pages
+│    │    ├── details/                   * Push Details tab page
+│    │    │    ├── detail.html           * DetailsPage template
+│    │    │    └── detail.ts             * DetailsPage code
+│    │    │
+│    │    ├── home/                      * Home page
+│    │    │    ├── home.html             * HomePage template
+│    │    │    └── home.ts               * HomePage code
+│    │    │
+│    │    ├── tabs/                      * Tabs page
+│    │    │    ├── tabs.html             * TabsPage template
+│    │    │    └── tabs.ts               * TabsPage code
+│    │    │
+│    ├── theme/                          * App theme files
+|    |     ├── variables.scss            * App Shared Sass Variables
+|    |
+|    |-- index.html
+|    |-- manifest.json
+|    |-- service-worker.js
+|
+├── .editorconfig                        * Defines coding styles between editors
+├── .gitignore                           * Example git ignore file
+├── LICENSE                              * MIT License
+├── README.md                            * This file
+├── config.xml                           * Cordova configuration file
+├── ionic.config.json                    * Ionic configuration file
+├── package.json                         * Defines our JavaScript dependencies
+├── tsconfig.json                        * Defines the root files and the compiler options
+├── tslint.json                          * Defines the rules for the TypeScript linter   
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/aggarwalankush/ionic2-push-base">Ionic2-push-base</a> is maintained by <a href="https://github.com/aggarwalankush">aggarwalankush</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>

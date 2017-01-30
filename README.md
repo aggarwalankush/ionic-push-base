@@ -15,8 +15,7 @@ This can be used as base template for Ionic 2 Push apps. It's working for both i
 * Install Ionic, cordova and node_modules
 
     ```bash
-    $ npm install -g ionic
-    $ sudo npm install -g cordova@6.3.1
+    $ npm install -g ionic cordova
     $ npm install
     ```
 
@@ -28,14 +27,14 @@ This can be used as base template for Ionic 2 Push apps. It's working for both i
 
 ```bash
     $ ionic platform add android
-    $ ionic build android
-    $ ionic run android
+    $ ionic build android --prod
+    $ ionic run android --prod
 ```
 
 ### iOS
 ```bash
     $ ionic platform add ios
-    $ ionic build ios
+    $ ionic build ios --prod
 ```    
     Run using XCode
 
@@ -69,8 +68,7 @@ ionic2-push-base/
 |    |-- app/
 |    |    ├── app.ts
 |    |    └── app.module.ts
-|    |    └── main.dev.ts
-|    |    └── main.prod.ts 
+|    |    └── main.ts
 |    |
 |    |-- pages/                          * Contains all of our pages
 │    │    ├── details/                   * Push Details tab page

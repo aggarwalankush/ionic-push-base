@@ -1,12 +1,22 @@
-Ionic 2 Push Base
+Ionic Push Base
 =================
 
-This can be used as base template for Ionic 2 Push apps. It's working for both iOS and Android Push Notifications.
+This can be used as base template for Ionic Push apps. It's working for both iOS and Android Push Notifications.
   
 ## Tutorial
-* [Push Notifications in Ionic 2](https://medium.com/@ankushaggarwal/push-notifications-in-ionic-2-658461108c59)
+* [Push Notifications in Ionic](https://medium.com/@ankushaggarwal/push-notifications-in-ionic-658461108c59)
 * [FCM Setup for Android Notifications](https://medium.com/@ankushaggarwal/gcm-setup-for-android-push-notifications-656cfdd8adbd)
 * [APNS Setup for IOS Notifications](https://medium.com/@ankushaggarwal/generate-apns-certificate-for-ios-push-notifications-85e4a917d522)
+
+## Prerequisites
+- Download nodejs from https://nodejs.org/en/download/current/ It will install `node` and `npm`
+```bash
+node -v
+ - should be >= 6.0.0
+npm -v
+ - should be >= 3.0.0
+```
+- For iOS, update XCode version to 8.0 or higher
 
 ## Getting Started
 
@@ -26,15 +36,15 @@ This can be used as base template for Ionic 2 Push apps. It's working for both i
 ### Android
 
 ```bash
-    $ ionic platform add android
-    $ ionic build android --prod
-    $ ionic run android --prod
+    $ ionic cordova platform add android
+    $ ionic cordova build android --prod
+    $ ionic cordova run android --prod
 ```
 
 ### iOS
 ```bash
-    $ ionic platform add ios
-    $ ionic build ios --prod
+    $ ionic cordova platform add ios
+    $ ionic cordova build ios --prod
 ```    
     Run using XCode
 
@@ -63,7 +73,7 @@ It has server code used to send Push Notification to iOS and Android device.
 ## File Structure of App
 
 ```
-ionic2-push-base/
+ionic-push-base/
 |-- src/
 |    |-- app/
 |    |    ├── app.ts

@@ -1,6 +1,6 @@
-import {Component} from "@angular/core";
-import {HomePage} from "../home/home";
-import {DetailsPage} from "../details/details";
+import { Component } from '@angular/core';
+import { HomePage } from '../home/home';
+import { DetailsPage } from '../details/details';
 
 @Component({
   templateUrl: 'tabs.html'

@@ -47,12 +47,12 @@ export class IonicPushApp {
     const pushObject: PushObject = this.push.init(options);
 
     pushObject.on('registration').subscribe((data: any) => {
-      console.log('device token ->', data.registrationId);
+      console.log('device token -> ' + data.registrationId);
       //TODO - send device token to server
     });
 
     pushObject.on('notification').subscribe((data: any) => {
-      console.log('message', data.message);
+      console.log('message -> ' + data.message);
       //if user using app and push notification comes
       if (data.additionalData.foreground) {
         // if application open, show popup
@@ -79,7 +79,7 @@ export class IonicPushApp {
       }
     });
 
-    pushObject.on('error').subscribe(error => console.error('Error with Push plugin', error));
+    pushObject.on('error').subscribe(error => console.error('Error with Push plugin' + error));
   }
 }
 

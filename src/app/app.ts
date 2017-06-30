@@ -9,7 +9,7 @@ import {DetailsPage} from "../pages/details/details";
 @Component({
   template: '<ion-nav [root]="rootPage"></ion-nav>'
 })
-export class Ionic2PushApp {
+export class IonicPushApp {
   @ViewChild(Nav) nav: Nav;
   rootPage: any;
 

@@ -17,6 +17,11 @@ npm -v
  - should be >= 3.0.0
 ```
 - For iOS, update XCode version to 8.0 or higher
+- Install cocoapods, required by latest version of phonegap-push-plugin
+```bash
+sudo gem install cocoapods
+pod setup
+```
 
 ## Getting Started
 
@@ -37,14 +42,14 @@ npm -v
 
 ```bash
     $ ionic cordova platform add android
-    $ ionic cordova build android --prod
-    $ ionic cordova run android --prod
+    $ ionic cordova build android
+    $ ionic cordova run android
 ```
 
 ### iOS
 ```bash
     $ ionic cordova platform add ios
-    $ ionic cordova build ios --prod
+    $ ionic cordova build ios
 ```    
     Run using XCode
 

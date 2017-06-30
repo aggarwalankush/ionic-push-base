@@ -5,25 +5,25 @@ import {StatusBar} from "@ionic-native/status-bar";
 import {Push} from "@ionic-native/push";
 import {SplashScreen} from "@ionic-native/splash-screen";
 import {TabsPage} from "../pages/tabs/tabs";
-import {Ionic2PushApp} from "./app";
+import {IonicPushApp} from "./app";
 import {HomePage} from "../pages/home/home";
 import {DetailsPage} from "../pages/details/details";
 
 
 @NgModule({
   declarations: [
-    Ionic2PushApp,
+    IonicPushApp,
     TabsPage,
     HomePage,
     DetailsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(Ionic2PushApp)
+    IonicModule.forRoot(IonicPushApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    Ionic2PushApp,
+    IonicPushApp,
     TabsPage,
     HomePage,
     DetailsPage

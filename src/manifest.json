@@ -1,6 +1,6 @@
 {
-  "name": "Ionic2Push",
-  "short_name": "Ionic2Push",
+  "name": "IonicPush",
+  "short_name": "IonicPush",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [
